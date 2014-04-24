@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13A603" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3RT-NR-D3j">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="3RT-NR-D3j">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
         <!--View Controller - Imaginarium-->
@@ -46,14 +46,27 @@
                                     <segue destination="pe5-e5-jcn" kind="push" identifier="photo_1" id="ygi-Wd-rdg"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5s-Ce-Q8f">
+                                <rect key="frame" x="137" y="295" width="52" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Sunrise">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="pe5-e5-jcn" kind="push" identifier="photo_4" id="bpO-oe-2wf"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="L5s-Ce-Q8f" firstAttribute="top" secondItem="WzW-Aw-Pu3" secondAttribute="bottom" constant="8" symbolic="YES" id="BmN-Dm-ij5"/>
                             <constraint firstItem="WzW-Aw-Pu3" firstAttribute="top" secondItem="5zx-wX-t8z" secondAttribute="bottom" constant="2" id="EZU-VD-prn"/>
                             <constraint firstAttribute="centerX" secondItem="WzW-Aw-Pu3" secondAttribute="centerX" id="SwS-Hl-N0R"/>
                             <constraint firstItem="5zx-wX-t8z" firstAttribute="top" secondItem="1Gj-ch-dXE" secondAttribute="bottom" id="V71-eQ-wmc"/>
                             <constraint firstAttribute="centerX" secondItem="1Gj-ch-dXE" secondAttribute="centerX" id="W8j-kb-piK"/>
+                            <constraint firstItem="WzW-Aw-Pu3" firstAttribute="centerX" secondItem="L5s-Ce-Q8f" secondAttribute="centerX" constant="-2.5" id="eGA-nJ-2OE"/>
                             <constraint firstAttribute="centerY" secondItem="5zx-wX-t8z" secondAttribute="centerY" id="j3L-xL-UJI"/>
+                            <constraint firstItem="L5s-Ce-Q8f" firstAttribute="leading" secondItem="1Gj-ch-dXE" secondAttribute="leading" id="kif-Ko-x48"/>
                             <constraint firstAttribute="centerX" secondItem="5zx-wX-t8z" secondAttribute="centerX" id="xR9-b4-At6"/>
                         </constraints>
                     </view>
@@ -131,6 +144,6 @@
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="ygi-Wd-rdg"/>
+        <segue reference="bpO-oe-2wf"/>
     </inferredMetricsTieBreakers>
 </document>
